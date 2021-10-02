@@ -17,8 +17,18 @@ services:
       context: .
     environment:
       DO_NOT_REMOVE: "setup"
-      HNT_PROMETHEUS_PG_HOST: "prometheus_pushgateway"
+      HNT_PROMETHEUS_PG_HOST: "localhost"
       HNT_BLOCKS_URL: "api.helium.io/v1/blocks"
+      HNT_DEBUG: "true"
+      HNT_HOTSPOT_ADDRESSES: "13BryremadrpAdGwVSsDoxYM1q12AzJrRX47AyvqLrdDDJhiG7S"
+      HNT_HOTSPOT_URL: "api.helium.io/v1/hotspots"
+      HNT_LOGFILE: "stdout"
+      HNT_LOGPATH: "/dev/"
+      HNT_PROJECT: "hnt_monitor"
+      HNT_SENSECAP_API_KEY: "2qivspbjaugm4clh2zz4idav2kfplvf3g7z6299ph4gvnehwpc"
+      HNT_SENSECAP_MONITOR: "true"
+      HNT_SENSECAP_SERIAL_NUMBERS: "110991629213303634, 110991629213300861, 110991629213301135, 110991629213300871"
+      HNT_TRACE: "true"
     networks:
       hnt_monitor:
         ipv4_address: 10.30.0.05

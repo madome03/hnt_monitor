@@ -18,6 +18,7 @@ services:
     environment:
       DO_NOT_REMOVE: "setup"
       HNT_PROMETHEUS_PG_HOST: "prometheus_pushgateway"
+      HNT_BLOCKS_URL: "api.helium.io/v1/blocks"
     networks:
       hnt_monitor:
         ipv4_address: 10.30.0.05
